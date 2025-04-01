@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kartenspiel Naughty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kartenspiel Naughty</h1>
+    <p id="punktestand">Spieler 1: 0 Punkte | Spieler 2: 0 Punkte</p>
+    <div id="stapel1" class="stapel">Vorspiel-Phase: 17 Karten</div>
+    <div id="stapel2" class="stapel" style="display: none;">hot!</div>
+    <div id="stapel3" class="stapel" style="display: none;">hotter!</div>
+    <div id="stapel4" class="stapel" style="display: none;">hottest!</div>
+    <div id="gezogeneKarte"></div>
+    <div id="ablageStapel" class="stapel">Ablage-Stapel: 0 Karten</div>
+    <div class="wuerfel-container">
+      <div id="wuerfel1" class="wuerfel">
+          <div class="wuerfel-seite wuerfel-seite-1"></div>
+          <div class="wuerfel-seite wuerfel-seite-2"></div>
+          <div class="wuerfel-seite wuerfel-seite-3"></div>
+          <div class="wuerfel-seite wuerfel-seite-4"></div>
+          <div class="wuerfel-seite wuerfel-seite-5"></div>
+          <div class="wuerfel-seite wuerfel-seite-6"></div>
+      </div>
+      <div id="wuerfel2" class="wuerfel">
+          <div class="wuerfel-seite wuerfel-seite-1"></div>
+          <div class="wuerfel-seite wuerfel-seite-2"></div>
+          <div class="wuerfel-seite wuerfel-seite-3"></div>
+          <div class="wuerfel-seite wuerfel-seite-4"></div>
+          <div class="wuerfel-seite wuerfel-seite-5"></div>
+          <div class="wuerfel-seite wuerfel-seite-6"></div>
+      </div>
+    </div>
+    <audio id="wuerfelSound" src="dice/wuerfel.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

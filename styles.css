@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.spieler {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.karte {
+    display: inline-block;
+    margin: 5px;
+}
+
+.karte img {
+    width: auto;
+    height: 215.625px;
+}
+
+.stapel {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    vertical-align: top;
+    width: 189px;
+    height: 316.25px;
+    overflow: visible;
+    position: relative;
+}
+
+#stapel1 {
+    background-image: url('cards/vorgluehen_deckblatt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#stapel2, #stapel3, #stapel4 {
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#ablageStapel {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+.stapel:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.wuerfel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wuerfel {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.wuerfel-seite {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wuerfel-seite:nth-child(1) { transform: translateZ(50px); }
+.wuerfel-seite:nth-child(2) { transform: rotateX(90deg) translateZ(50px); }
+.wuerfel-seite:nth-child(3) { transform: rotateY(180deg) translateZ(50px); }
+.wuerfel-seite:nth-child(4) { transform: rotateX(-90deg) translateZ(50px); }
+.wuerfel-seite:nth-child(5) { transform: rotateY(90deg) translateZ(50px); }
+wuerfel-seite:nth-child(6) { transform: rotateY(-90deg) translateZ(50px); }
